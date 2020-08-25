@@ -41,3 +41,7 @@ print(Next_Prime(test1), '| Expected: 5')
 #Evaluate
 #Runtime = O(n^2)
 #Space Compexity = O(1)
+
+#********************************
+#  time spend: 10m 10s
+#********************************
