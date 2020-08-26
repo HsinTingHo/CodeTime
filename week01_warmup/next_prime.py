@@ -27,7 +27,7 @@ def is_prime(n):
       return False
   return True
 
-def Next_Prime(n):
+def next_prime(n):
   for i in range(n+1, 2*n):
     if is_prime(i):
       return i
@@ -36,7 +36,7 @@ def Next_Prime(n):
 
 #Review
 test1 = 3
-print(Next_Prime(test1), '| Expected: 5')
+print(next_prime(test1), '| Expected: 5')
 
 #Evaluate
 #Runtime = O(n^2)

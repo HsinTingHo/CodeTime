@@ -17,7 +17,7 @@
 # 1. print the string backwards with range()
 
 
-def Reverse_String(input_str):
+def reverse_string(input_str):
   new_str = ''
   for i in range(len(input_str)-1, -1, -1):
     new_str += input_str[i]
@@ -25,10 +25,10 @@ def Reverse_String(input_str):
 
 #Review
 test = 'hello'
-print('Actual: ',Reverse_String(test), '| Expected: olleh')
+print('Actual: ',reverse_string(test), '| Expected: olleh')
 
 test2 = "I got a ' in the sentence"
-print('Actual: ',Reverse_String(test2), "| Expected: ecnetnes eht ni ' a tog I")
+print('Actual: ',reverse_string(test2), "| Expected: ecnetnes eht ni ' a tog I")
 
 
 #Evaluate
