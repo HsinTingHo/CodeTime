@@ -6,6 +6,7 @@
 #2. am i allowed to pass the linked list multiple time? -> yes
 #3. what is the argument of the function, list or head of list? -> head
 #4. can I assume all the value in the linked list has same data type? -> yes
+
 # edge case
 # input: '121'
 # output: True
