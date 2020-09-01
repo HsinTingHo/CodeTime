@@ -52,13 +52,13 @@ class S_Cycle_List:
     print(current.data)
     print('tail connected to ',current.next.data)
     
-print('***** Test Cycle List *****')
-test = [1,2,3,4,5]
-cycle_list = S_Cycle_List()
-for elem in test:
-  node = S_Node(elem)
-  cycle_list.insert(node)
-cycle_list.print_list()
+# print('***** Test Cycle List *****')
+# test = [1,2,3,4,5]
+# cycle_list = S_Cycle_List()
+# for elem in test:
+#   node = S_Node(elem)
+#   cycle_list.insert(node)
+# cycle_list.print_list()
 #********************************
 #  total time: 6m
 #********************************
