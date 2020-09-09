@@ -16,8 +16,10 @@ print('****** test reverse doubly linked list ******')
 # Output: None
 
 test = [1,2,3,4,5,6,7,8]
+
 #test = [1,2]
 #test = []
+
 k = 3
 test_list = d.D_List()
 for elem in test:
@@ -30,7 +32,6 @@ test_list.print_list()
 print('Print list after reverse every k nodes')
 result = r.reverse_list_in_given_size(test_list, k)
 result.print_list()
-
 
 
 #test doubly linked list

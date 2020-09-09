@@ -70,6 +70,7 @@ def reverse_list_in_given_size(d_list, k):
     
     #get nodes to reverse
     counter = 1
+
     while counter < k and p2.next is not None:
       p2 = p2.next
       counter += 1
@@ -87,10 +88,10 @@ def reverse_list_in_given_size(d_list, k):
       old_t = new_t
     if temp is not None:
       p1 = p2 = temp
-      
     else:
       break
   return d_list
+
 
 #Evaluate
 #Runtime: O(n)
@@ -99,3 +100,4 @@ def reverse_list_in_given_size(d_list, k):
 # total time: 90m 14s + 18m 40s 
 #             = 108m 54s
 #******************************************
+
