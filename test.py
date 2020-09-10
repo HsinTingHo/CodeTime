@@ -1,6 +1,19 @@
+# ******************** WEEK 6 ********************
+print('\n***** evaluate postfix expression *****')
+from week06_stacks_and_queues import evaluate_postfix_expression as epe
+input = "5 1 2  +  4  * +  3  -"
+print(epe.evaluate_postfix_expression(input), '| Expected: 14')
+
+input = "5 1 2 + *"
+print(epe.evaluate_postfix_expression(input), '| Expected: 15')
+
+input = "5 1 2"
+print(epe.evaluate_postfix_expression(input), '| Expected: None')
+
+# ******************** WEEK 5 ********************
 from week05_review import reverse_list_in_given_size as r
-from week05_review import doubly_linked_list as d
-print('****** test reverse doubly linked list ******')
+from week05_review import doubly_linked_gilist as d
+print('\n****** test reverse doubly linked list ******')
 # edge cases
 # Input: 1 <-> 2 <-> 3 <-> 4 <-> 5 <-> 6 <-> 7 <-> 8
 #        k = 3
