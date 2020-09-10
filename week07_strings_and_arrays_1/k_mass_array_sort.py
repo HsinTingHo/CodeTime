@@ -37,7 +37,7 @@ result = sort_k_messed_array(arr, k)
 print(result)
 
 #Evaluate
-#Runtime = O(k*n) = O(n)
+#Runtime = O(k*n)
 #Space = O(1)
 
 #*******************************
