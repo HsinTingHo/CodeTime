@@ -1,4 +1,16 @@
 # ******************** WEEK 6 ********************
+from week06_stacks_and_queues import validate_push_pop_sequence as v
+print('\n validate_push_and_pop_sequence')
+pushed = [1, 2, 3, 4, 5]
+popped = [4, 5, 3, 2, 1]
+print(v.validate_push_and_pop_sequence(pushed, popped),'| Expected: True')
+pushed = [1, 2, 3, 4, 5]
+popped = [4, 3, 5, 1, 2]
+print(v.validate_push_and_pop_sequence(pushed, popped),'| Expected: Faulse')
+pushed = [1, 2, 3, 4, 5]
+popped = [4, 3, 5, 1, 2]
+print(v.validate_push_and_pop_sequence(None, None),'| Expected: Faulse')
+# ******************** WEEK 6 ********************
 print('\n***** evaluate postfix expression *****')
 from week06_stacks_and_queues import evaluate_postfix_expression as epe
 input = "5 1 2  +  4  * +  3  -"
@@ -12,7 +24,7 @@ print(epe.evaluate_postfix_expression(input), '| Expected: None')
 
 # ******************** WEEK 5 ********************
 from week05_review import reverse_list_in_given_size as r
-from week05_review import doubly_linked_gilist as d
+from week05_review import doubly_linked_list as d
 print('\n****** test reverse doubly linked list ******')
 # edge cases
 # Input: 1 <-> 2 <-> 3 <-> 4 <-> 5 <-> 6 <-> 7 <-> 8
