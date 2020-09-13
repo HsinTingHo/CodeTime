@@ -44,7 +44,6 @@
 #     if temp is not None, set p1 equals temp and p2 equals to temp.next
 #return list
 
-
 def reverse(p1, p2):
   p1.pre = p2.next = None
   new_t = p1
