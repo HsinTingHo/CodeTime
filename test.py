@@ -12,6 +12,7 @@ print(tp.meeting_planner(slotsA, slotsB, dur),'| Expected: []')
 
 # ******************** WEEK 6 ********************
 from week06_stacks_and_queues import validate_push_pop_sequence as v
+
 print('\n***** validate_push_and_pop_sequence *****')
 pushed = [1, 2, 3, 4, 5]
 popped = [4, 5, 3, 2, 1]
