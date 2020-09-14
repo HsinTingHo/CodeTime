@@ -54,11 +54,5 @@ def validate_push_and_pop_sequence(to_push, to_check):
 #Space: O(n)
 #**************************
 # total time: 25m58s
-<<<<<<< HEAD
 #**************************
-=======
-#test
-pushed = [1, 2, 3, 4, 5]
-popped = [4, 3, 5, 1, 2]
-print(validate_push_and_pop_sequence(pushed, popped))
->>>>>>> 2f03dbfba02fe6ae31a6f2b7d9ee5b11fcd583a9
+
