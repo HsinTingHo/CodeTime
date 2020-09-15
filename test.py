@@ -1,4 +1,17 @@
 # ******************** WEEK 7 ********************
+from week07_strings_and_arrays_1 import sort_by_smallest_subarray as ss
+print('\n***** sort_by_smallest_subarry *****')
+test1 = [1, 2, 5, 3, 7, 10, 9, 12]
+print(ss.sort_by_smallest_subarry(test1), '| Expected: 5')
+test2 = [1, 3, 2, 0, -1, 7, 10]
+print(ss.sort_by_smallest_subarry(test2), '| Expected: 5')
+test3 = [1, 2, 3]
+print(ss.sort_by_smallest_subarry(test3), '| Expected: 0')
+test4 = [3, 2, 1]
+print(ss.sort_by_smallest_subarry(test4), '| Expected: 3')
+
+
+
 from week07_strings_and_arrays_1 import time_planner as tp
 print('\n***** time_planner *****')
 slotsA = [[10, 50], [60, 120], [140, 210]]
