@@ -1,4 +1,22 @@
 # ******************** WEEK 7 ********************
+print('\n***** longest_substring *****')
+from week07_strings_and_arrays_1 import longest_substring as ls
+test = "araaci"
+K=2
+print(ls.longest_substring(test, K), '| Expected: 4')
+
+test = "araaci"
+K=1
+print(ls.longest_substring(test, K), '| Expected: 2')
+
+test = "cbbebi"
+K=3
+print(ls.longest_substring(test, K), '| Expected: 5')
+
+test = ""
+K=3
+print(ls.longest_substring(test, K), '| Expected: 0')
+
 print('\n***** increment_precision *****')
 from week07_strings_and_arrays_1 import increment_precision as ip
 
