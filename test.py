@@ -1,6 +1,16 @@
 # ******************** WEEK 7 ********************
-from week07_strings_and_arrays_1 import sort_by_smallest_subarray as ss
+print('\n***** run_length_encoding *****')
+from week07_strings_and_arrays_1 import run_length_encoding as rle
+input_str = "wwwwaaadexxxxxx"
+print(rle.run_length_encoding(input_str), '| Expected: "w4a3d1e1x6"')
+input_str = ""
+print(rle.run_length_encoding(input_str), '| Expected: ""')
+input_str = None
+print(rle.run_length_encoding(input_str), '| Expected: None')
+
 print('\n***** sort_by_smallest_subarry *****')
+from week07_strings_and_arrays_1 import sort_by_smallest_subarray as ss
+
 test1 = [1, 2, 5, 3, 7, 10, 9, 12]
 print(ss.sort_by_smallest_subarry(test1), '| Expected: 5')
 test2 = [1, 3, 2, 0, -1, 7, 10]
@@ -11,9 +21,9 @@ test4 = [3, 2, 1]
 print(ss.sort_by_smallest_subarry(test4), '| Expected: 3')
 
 
-
-from week07_strings_and_arrays_1 import time_planner as tp
 print('\n***** time_planner *****')
+from week07_strings_and_arrays_1 import time_planner as tp
+
 slotsA = [[10, 50], [60, 120], [140, 210]]
 slotsB = [[0, 15], [60, 70]]
 dur = 8
