@@ -1,4 +1,34 @@
 # ******************** WEEK 7 ********************
+print('\n***** longest_substring *****')
+from week07_strings_and_arrays_1 import longest_substring as ls
+test = "araaci"
+K=2
+print(ls.longest_substring(test, K), '| Expected: 4')
+
+test = "araaci"
+K=1
+print(ls.longest_substring(test, K), '| Expected: 2')
+
+test = "cbbebi"
+K=3
+print(ls.longest_substring(test, K), '| Expected: 5')
+
+test = ""
+K=3
+print(ls.longest_substring(test, K), '| Expected: 0')
+
+print('\n***** increment_precision *****')
+from week07_strings_and_arrays_1 import increment_precision as ip
+
+test = [5,8,9]
+print(ip.increment_precision(test), 'Expected: [5,9,0]')
+test = [1,2,3]
+print(ip.increment_precision(test), 'Expected: [1,2,4]')
+test = []
+print(ip.increment_precision(test), 'Expected: []')
+test = None
+print(ip.increment_precision(test), 'Expected: None')
+
 print('\n***** run_length_encoding *****')
 from week07_strings_and_arrays_1 import run_length_encoding as rle
 input_str = "wwwwaaadexxxxxx"
