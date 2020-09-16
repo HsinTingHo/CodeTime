@@ -1,4 +1,16 @@
 # ******************** WEEK 7 ********************
+print('\n***** increment_precision *****')
+from week07_strings_and_arrays_1 import increment_precision as ip
+
+test = [5,8,9]
+print(ip.increment_precision(test), 'Expected: [5,9,0]')
+test = [1,2,3]
+print(ip.increment_precision(test), 'Expected: [1,2,4]')
+test = []
+print(ip.increment_precision(test), 'Expected: []')
+test = None
+print(ip.increment_precision(test), 'Expected: None')
+
 print('\n***** run_length_encoding *****')
 from week07_strings_and_arrays_1 import run_length_encoding as rle
 input_str = "wwwwaaadexxxxxx"
