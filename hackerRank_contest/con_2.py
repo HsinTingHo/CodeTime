@@ -21,38 +21,42 @@ import sys
 #A box can only fit one box
 #Given a list of box size, count how many box will there be after implement the new policy
 
+
+#Edge case:
+#Input: [2,4,1,6,7,3,3,8]
+#Output: 4
+
+#Input: [1, 1]
+#Output: 2
+
+#Input: []
+#Output: 0
+
+#Input: [2,2,3,3]
+#Output: 4
+
+#Input: [2,4,4,6,8,8]
+#Output: 3
 #outter = 2*inner
 #outter can hold 1 inner
 
 #Plan:
-#2 pointers
-#sort the list and find the closest number that is twice as large
+#sort size
+#creat a dictionary that use size as key and number of boxes as value
+#start from the highest number of box, and check if the next most common box is double of size or twice as small
+#if it is, reduce the value of both boxes
+
 
 def findDolls(size):
     size.sort()
     print(size)
-    p1, p2 = 0, 1
+    p1 = 0
     length = len(size)
-    final_boxes = []
-    count = 0
-    box_table = {}
+    for p1 in range(size):
+      p2 = p1+1
+      for 
 
-    for box in size:
-        if box in box_table.keys():
-            box_table[box] += 1
-        else:
-            box_table[box] = 1
-    unique_b = box_table.keys()
-    for box in unique_b:
-        num_small_box = box_table[box]
-        for another_box in unique_b:
-            if another_box >= box*2:
-                for i in range(box_table[another_box]):
-                    print(box, another_box, count)
-                    count += 1
-                    box_table[another_box] -= 1
-                break
-    return count
+    
     # while p1 < length and p2 < length:
     #     if size[p1]*2 <= size[p2]:
     #         final_box.append(size[p2])
