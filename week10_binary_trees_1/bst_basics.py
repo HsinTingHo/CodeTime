@@ -29,7 +29,6 @@ class BST:
 
     #add node
     if y is None:
-      print('I am a real tree now!')
       self.root = node
     elif node.data<y.data:
       y.left = node
@@ -125,13 +124,13 @@ def print_inorder_iter(root):
 
 
 #Test BST
-test1 = [1]
-test2 = [2,3,9,7,1]
+# test1 = [1]
+# test2 = [2,3,9,7,1]
 
-tree2 = BST()
-for i in test2:
-  print('Adding node %d'%i)
-  node = Node(i)
-  tree2.add_new_node(node)
-print('*** Done set up test data ***')
-print_preorder_iter(tree2.root)
+# tree2 = BST()
+# for i in test2:
+#   print('Adding node %d'%i)
+#   node = Node(i)
+#   tree2.add_new_node(node)
+# print('*** Done set up test data ***')
+# print_preorder_iter(tree2.root)
