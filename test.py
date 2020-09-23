@@ -1,3 +1,29 @@
+# ******************** WEEK 10 ********************
+print('\n***** identical_tree *****')
+from week10_binary_trees_1 import bst_basics as bst
+from week10_binary_trees_1 import identical_tree as it
+test1 = [4,3,2,5,8,9]
+t1 = bst.BST()
+t2 = bst.BST()
+for elem in test1:
+  #print(elem)
+  node1 = bst.Node(elem)
+  node2 = bst.Node(elem)
+  t1.add_new_node(node1)
+  t2.add_new_node(node2)
+  
+
+print('original trees:')
+print('\n*** t1 ***')
+bst.print_preorder(t1.root)
+print('\n*** t2 ***')
+bst.print_preorder(t2.root)
+
+print(it.identical_tree(t1.root, t2.root),'| Expected: True')
+
+t2.add_new_node(bst.Node(6))
+print(it.identical_tree(t1.root, t2.root),'| Expected: False')
+
 # ******************** WEEK 7 ********************
 print('\n***** longest_substring *****')
 from week07_strings_and_arrays_1 import longest_substring as ls
